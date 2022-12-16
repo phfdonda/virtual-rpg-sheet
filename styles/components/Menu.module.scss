@@ -1,15 +1,40 @@
-.inventory {
-    width: 20vw;
+@use "styles/abstract/index" as *;
+
+.menu {
+    width: 100vw;
+    height: 20vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inventory_button {
+    width: 50vw;
     height: 20vh;
     background-color: aquamarine;
 }
-.avatar {
-    width: 20vw;
+.avatar_button {
+    @extend %flex-center;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    right: calc(50vw - 10vh);
+    width: 20vh;
     height: 20vh;
-    background-color: aquamarine;
+    border-radius: 50%;
+    background-color: white;
 }
-.magic {
-    width: 20vw;
+
+.frame {
+    position: relative;
+    border-radius: 50%;
+    width: 18vh;
+    height: 18vh;
+    background-color: plum;
+}
+
+.magic_button {
+    width: 50vw;
     height: 20vh;
-    background-color: aquamarine;
+    background-color: greenyellow;
 }

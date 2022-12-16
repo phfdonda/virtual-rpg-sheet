@@ -4,12 +4,16 @@ import {Inventory, Avatar, Magic} from "components"
 
 export default function Menu() {
   return (
-    <div>
-      <div className={styles.inventory}></div>
+    <div className={styles.menu}>
+      <div className={styles.inventory_button}>
+      </div>
             {/* <Inventory /> */}
-      <div className={styles.avatar}></div>
+      <div className={styles.avatar_button}>
+      <div className={styles.frame}></div>
+
+      </div>
             {/* <Avatar /> */}
-      <div className={styles.magic}></div>
+      <div className={styles.magic_button}></div>
             {/* <Magic /> */}
     </div>
   )
